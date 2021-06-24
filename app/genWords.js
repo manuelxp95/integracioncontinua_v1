@@ -3,6 +3,7 @@ const array = ["Peron", "Mi", "General", "Que", "Grande", "Sos", "Peso", "155", 
 
 
 //randomizador
+
 var num = Math.floor(Math.random() * array.length);
 
 console.log(array[num]);
