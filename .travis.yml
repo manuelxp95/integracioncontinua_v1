@@ -11,6 +11,6 @@ script:
 notifications:
   slack: 
     rooms: 
-      - pruebademanu:E7NRp4JO3HuhRWuGqoEhl56s#general
+      - pruebademanu:E7NRp4JO3HuhRWuGqoEhl56s#random
     template:
-      - "SAQUENME DE VENEZUELAAAAAAAAAAAA!!!"
+      - "CHOQUE LA MOTO... PERO GRACIAS A CRISTO A REY NO ME PASO NADA 😎"
