@@ -4,6 +4,9 @@ node_js:
 jdk:
   - oraclejdk8
 addons:
-  sonarcloud: true
+  sonarcloud:
+  organization: "manuelxp95"
+  token:
+    secure: "31fe127f15a4996275e2cfb2c1da756071f2b29f" # encrypted value of your token
 script:
-  - sonar-scanner -Dsonar.login=SONAR_TOKEN -Dsonar.organization=manuelxp95 -Dsonar.projectKey=manuelxp95_integracioncontinua_v1 -Dsonar.sources='./app' -X
+  - sonar-scanner
