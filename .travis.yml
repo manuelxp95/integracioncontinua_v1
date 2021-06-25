@@ -10,3 +10,5 @@ script:
   - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=manuelxp95 -Dsonar.projectKey=manuelxp95_integracioncontinua_v1  -Dsonar.sources='./app' -X
 notifications:
   slack: pruebademanu:E7NRp4JO3HuhRWuGqoEhl56s
+template:
+  - "SAQUENME DE VENEZUELAAAAAAAAAAAA!!!"
