@@ -1,5 +1,11 @@
+//Declaraciones
 const express = require("express");
 const app = express();
+let ejs = require('ejs');
+app.set('view engine', 'ejs');
+app.use(express.static("public"));
+
+//funcion de aplicacion
 
 function palRandom() {
     //Diccionario
@@ -14,15 +20,28 @@ function palRandom() {
     return array[num];
 };
 
-module.exports = {
-    palRandom
-};
+// ejecucion en servidor + integracion html
 
 app.get("/", function(req, res) {
-    res.send(palRandom());
+    res.render(__dirname + '/index.ejs', {
+        PALABRA: ""
+    });
+});
+
+app.post("/", function(req, res) {
+    let palabra = palRandom();
+
+    res.render(__dirname + '/index.ejs', {
+        PALABRA: palabra
+    });
+
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function() {
     console.log("Me ejecuto equisde");
 });
+
+module.exports = {
+    palRandom
+};
