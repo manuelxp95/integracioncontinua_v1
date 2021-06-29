@@ -7,6 +7,8 @@ function palRandom() {
     var num = Math.floor(Math.random() * array.length);
 
     console.log(array[num]);
+
+    return array[num];
 };
 
 module.exports = {
