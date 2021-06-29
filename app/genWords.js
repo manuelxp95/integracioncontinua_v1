@@ -1,9 +1,14 @@
-//Diccionario
-const array = ["Peron", "Mi", "General", "Que", "Grande", "Sos", "Peso", "155", "No", "Como", "Mayonesa", "Con", "Ajo", ];
+function palRandom() {
+    //Diccionario
+    const array = ["Economia", "Mi", "General", "Que", "Grande", "Sos", "Peso", "155", "No", "Como", "Mayonesa", "Con", "Ajo"];
 
+    //Randomizador
 
-//Randomizador
+    var num = Math.floor(Math.random() * array.length);
 
-var num = Math.floor(Math.random() * array.length);
+    console.log(array[num]);
+};
 
-console.log(array[num]);
+module.exports = {
+    palRandom
+}
