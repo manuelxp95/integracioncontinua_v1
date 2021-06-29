@@ -16,5 +16,5 @@ notifications:
       - "CHOQUE LA MOTO... PERO GRACIAS A CRISTO A REY NO ME PASO NADA :sunglasses: :sunglasses: :sunglasses:"
 deploy:
   provider: heroku
-  api_key:
-    secure: "a8ae7d93-a089-41a5-b47c-fa0f6f6f1339"
+  api_key: "a8ae7d93-a089-41a5-b47c-fa0f6f6f1339"
+  app: gen-words
