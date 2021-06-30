@@ -9,11 +9,8 @@ script:
   - npm run cover
   - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=manuelxp95 -Dsonar.projectKey=manuelxp95_integracioncontinua_v1  -Dsonar.sources='./app' -X
 notifications:
-  slack: 
-    rooms: 
-      - pruebademanu:E7NRp4JO3HuhRWuGqoEhl56s#random
-    template:
-      - "GOKU LE GANA A TODOS, MENOS A CRISTO REY :sunglasses: :sunglasses: :sunglasses:"
+  slack: pruebaentorno-l2g6550:UmteJaSNSymBdbI1HgDDcwgk
+
 deploy:
   provider: heroku
   api_key: "a8ae7d93-a089-41a5-b47c-fa0f6f6f1339"
