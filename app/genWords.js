@@ -23,7 +23,7 @@ function palRandom() {
 // ejecucion en servidor + integracion html
 
 app.get("/", function(req, res) {
-    res.render(__dirname + '/index.ejs', {
+    res.render(__dirname + '../index.ejs', {
         PALABRA: ""
     });
 });
@@ -31,7 +31,7 @@ app.get("/", function(req, res) {
 app.post("/", function(req, res) {
     let palabra = palRandom();
 
-    res.render(__dirname + '/index.ejs', {
+    res.render(__dirname + '../index.ejs', {
         PALABRA: palabra
     });
 
