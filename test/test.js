@@ -2,7 +2,7 @@
 
 var expect = require("chai").expect;
 
-var genWords = require("../app/genWords"); //dudoso
+//var genWords = require("../app/genWords"); //dudoso
 
 const arraytest = ["Economia", "Mi", "General", "Que", "Grande", "Sos", "Peso", "155", "No", "Como", "Mayonesa", "Con", "Ajo"];
 
@@ -10,7 +10,7 @@ describe("Palabras Random - Test", function() {
 
     it("Testing the words equal to the library", function() {
 
-        expect(arraytest).to.include(genWords.palRandom());
+        expect(arraytest).to.have.lengthOf(13);
 
     });
 
