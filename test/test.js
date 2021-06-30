@@ -4,24 +4,14 @@ var expect = require("chai").expect;
 
 //var genWords = require("../app/genWords"); //dudoso
 
-const arraytest = ["Economia", "Mi", "General", "Que", "Grande", "Sos", "Peso", "155", "No", "Como", "Mayonesa", "Con", "Ajo"];
+const arraytest = ["Economia", "Mi", "General", "Que", "Grande", "Sos", "Peso", "155", "No", "Como", "Mayonesa", "Con", "Ajo", "お兄ちゃん", "Reddit", "Fluor", "Boca", "River", "Brasil", "Ciruela", "Negocio", "Equipaje", "Microbio", "Goku", "Goya", "Resistencia", "UTN", "Zurdo", "Bicho", "Submarino"];
 
 describe("Palabras Random - Test", function() {
 
     it("Testing the words equal to the library", function() {
 
-        expect(arraytest).to.have.lengthOf(13);
+        expect(arraytest).to.have.lengthOf(30);
 
     });
 
 });
-
-
-//var assert = require('assert');
-//describe('Array', function() {
-//    describe('#indexOf()', function() {
-//        it('should return -1 when the value is not present', function() {
-//            assert.equal([1, 2, 3].indexOf(4), -1);
-//        });
-//    });
-//});
