@@ -10,7 +10,7 @@ describe("Palabras Random - Test", function() {
 
     it("Testing the words equal to the library", function() {
 
-        expect(arraytest).to.have.lengthOf(30);
+        expect(arraytest).to.have.lengthOf(10);
 
     });
 
