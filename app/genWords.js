@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 //Diccionario
-const array = ["Economia", "Mi", "General", "Que", "Grande", "Sos", "Peso", "155", "No", "Como", "Mayonesa", "Con", "Ajo", "お兄ちゃん", "Reddit", "Fluor", "Boca", "River", "Brasil", "Ciruela", "Negocio", "Equipaje", "Microbio", "Goku", "Goya", "Resistencia", "UTN", "Zurdo", "Bicho", "Submarino"];
+const array = ["Economia", "Violeta", "Mi", "General", "Que", "Grande", "Sos", "Peso", "155", "No", "Como", "Mayonesa", "Con", "Ajo", "お兄ちゃん", "Reddit", "Fluor", "Boca", "River", "Brasil", "Ciruela", "Negocio", "Equipaje", "Microbio", "Goku", "Goya", "Resistencia", "UTN", "Zurdo", "Bicho", "Submarino"];
 
 //funcion de aplicacion
 
@@ -46,4 +46,4 @@ app.listen(PORT, function() {
 module.exports = {
     palRandom,
     array
-}
+};
